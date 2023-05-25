@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Alura Challenge 01 G5 -Encriptador de Texto-</title>
+</head>
+<body>
+    <main class="contenedor1">
+
+        <section class="head">
+            <img src="imagenes/Logo.png" >
+            <h1>Encriptador</h1>
+            <img src="imagenes/insignia01.png" width="180" id="insignia">
+        </section>
+        <section class="contenedor2">
+            <div class="caja-entrada">
+                <div class="texto">
+                    <textarea id="entrada" rows="10" placeholder="Ingrese su texto aqui" autofocus></textarea>
+                </div>
+                    <div><p class="condicion">Solo letras minusculas y sin acentos</p></div>
+                <div class="caja-botones">
+                    <button id="btn-encrypt">Encriptar</button>
+                    <button id="btn-decrypt">Desencriptar</button>
+                </div>
+            </div>
+            <div class="caja-resultado">
+                <div class="img-resultado"><img src="imagenes/logo-texto-encriptado.jpg" id="muestra-imagen" width="300px"></div>
+                    <h3 id="result"></h3>
+                    <img src="imagenes/logo-texto-encriptador.jpg" id="ocultar-imagen">
+                    <p class="msg" id="ocultar-msg">Ningun mensaje fue encontrado</p>
+                    <p class="instruccion" id="ocultar-ins">Ingrese el mensaje que quiera encriptar o desenpcriptar</p>
+                <div class="boton-copia">
+                    <button id="btn-copy" onclick="sweet">Copiar</button>
+                </div>
+            </div>
+        </section>
+        <section class="creditos">
+            <div class="footer-img">
+                <div>
+                    <a href="https://github.com/FedericoSegovia/Alura-Challenge-01-G5"><img src="imagenes/icons8-github-squared.svg"></a>
+                    <a href="https://www.linkedin.com/in/federico-ezequiel-segovia-933a77244/"><img src="imagenes/icons8-linkedin.svg"></a>
+                </div>
+                <p>Developed by Federico Segovia</p>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
